@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CWPopMenu" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mlM-ib-Sbn">
+                                <rect key="frame" x="16" y="20" width="52" height="30"/>
+                                <state key="normal" title="LeftTop"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IKa-pb-a8D">
+                                <rect key="frame" x="231" y="20" width="128" height="30"/>
+                                <state key="normal" title="RightTop+++++++"/>
+                                <connections>
+                                    <action selector="rightTopAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="puq-Ot-mBS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K5a-dX-GXg">
+                                <rect key="frame" x="16" y="617" width="77" height="30"/>
+                                <state key="normal" title="LeftBottom"/>
+                                <connections>
+                                    <action selector="leftBottomAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ua0-Rd-hjj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zjw-5S-QhL">
+                                <rect key="frame" x="273" y="617" width="86" height="30"/>
+                                <state key="normal" title="RightBottom"/>
+                                <connections>
+                                    <action selector="rightBottomAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="D41-nI-2yk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L9v-2E-PsB">
+                                <rect key="frame" x="164" y="318" width="47" height="30"/>
+                                <state key="normal" title="Center"/>
+                                <connections>
+                                    <action selector="centerAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="S7j-Xz-5iP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ped-Qe-3Xu">
+                                <rect key="frame" x="16" y="20" width="52" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="LeftTop"/>
+                                <connections>
+                                    <action selector="leftTopAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9rf-Yt-HfV"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="mlM-ib-Sbn" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="LP2-mr-Kj4"/>
+                            <constraint firstItem="K5a-dX-GXg" firstAttribute="baseline" secondItem="Zjw-5S-QhL" secondAttribute="baseline" id="SWk-ir-1vg"/>
+                            <constraint firstItem="mlM-ib-Sbn" firstAttribute="leading" secondItem="K5a-dX-GXg" secondAttribute="leading" id="VxA-lr-2MI"/>
+                            <constraint firstAttribute="bottom" secondItem="K5a-dX-GXg" secondAttribute="bottom" constant="20" symbolic="YES" id="arA-P1-6LL"/>
+                            <constraint firstItem="L9v-2E-PsB" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="fGG-KU-lB0"/>
+                            <constraint firstItem="L9v-2E-PsB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lHN-qT-207"/>
+                            <constraint firstItem="IKa-pb-a8D" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="qZJ-df-1v7"/>
+                            <constraint firstItem="mlM-ib-Sbn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="uxh-Xm-hEn"/>
+                            <constraint firstItem="mlM-ib-Sbn" firstAttribute="baseline" secondItem="IKa-pb-a8D" secondAttribute="baseline" id="xO9-qs-Lj6"/>
+                            <constraint firstItem="IKa-pb-a8D" firstAttribute="trailing" secondItem="Zjw-5S-QhL" secondAttribute="trailing" id="yQq-87-64x"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="95" y="103"/>
+        </scene>
+    </scenes>
+</document>
